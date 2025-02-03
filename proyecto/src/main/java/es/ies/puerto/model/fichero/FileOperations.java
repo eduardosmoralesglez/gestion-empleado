@@ -213,7 +213,6 @@ public class FileOperations implements OperationsInterfase{
      */
     private boolean updateFile(Set<Empleado> empleados, File file) {
         try {
-            String path = file.getAbsolutePath();
             file.delete();
             file.createNewFile();
         } catch (IOException e) {
