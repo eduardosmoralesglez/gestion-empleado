@@ -32,7 +32,11 @@ public class FileOperations implements OperationsInterfase{
         }
     }
 
-    
+/**
+     * Funcion para crear una entrada en el fichero
+     * @param empleado Empleado
+     * @return true/false
+     */
     @Override
     public boolean create(Empleado empleado) {
         if (empleado == null || empleado.getIdentificador() == null) {
@@ -45,6 +49,11 @@ public class FileOperations implements OperationsInterfase{
         return create(empleados.toString(), fichero);
     }
 
+/**
+     * Funcion para mostrar un empleado
+     * @param identificador String.
+     * @return Empleado
+     */
     @Override
     public Empleado read(String identificador) {
         if (identificador == null || identificador.isEmpty()) {
@@ -54,10 +63,10 @@ public class FileOperations implements OperationsInterfase{
         return search(empleado);
     }
 
-        /**
-     * Funcion para 
-     * @param
-     * @return
+    /**
+     * Funcion para mostrar un empleado
+     * @param empleado Empleado.
+     * @return Empleado
      */
     @Override
     public Empleado read(Empleado empleado) {

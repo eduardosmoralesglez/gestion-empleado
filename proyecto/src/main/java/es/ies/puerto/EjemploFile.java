@@ -1,16 +1,9 @@
 package es.ies.puerto;
 
-import es.ies.puerto.model.Persona;
+import java.io.File;
 
 public class EjemploFile {
-    
     public static void main(String[] args) {
         
-    
-    
-    
-    
-    
-    
     }    
 }

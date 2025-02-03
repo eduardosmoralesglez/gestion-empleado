@@ -102,7 +102,7 @@ public class Empleado extends Persona{
         LocalDate fechaNacimiento = LocalDate.parse(getFechaNacimineto(), formato);
         LocalDate fechaActual = LocalDate.now();
         Period edadPeriodo = fechaNacimiento.until(fechaActual);
-        LocalDate edad = LocalDate.of(edadPeriodo.getYears(), edadPeriodo.getMonths(), edadPeriodo.getDays())
+        LocalDate edad = LocalDate.of(edadPeriodo.getYears(), edadPeriodo.getMonths(), edadPeriodo.getDays());
         return edad;
     }
 }

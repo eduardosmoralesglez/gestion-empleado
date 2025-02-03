@@ -1,7 +1,9 @@
 package es.ies.puerto.model;
 
 import java.util.Set;
-
+/**
+ * Interfaz de los metodos CRUD para operar con ficheros
+ */
 public interface OperationsInterfase {
     boolean create(Empleado empleado);
     Empleado read(String identificador);
