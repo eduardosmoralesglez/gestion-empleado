@@ -191,6 +191,9 @@ public class FileOperations implements OperationsInterfase{
      * @return Set<Empleado>
      */
     private Set<Empleado> read(File file) {
+        if (file == null) {
+            return new HashSet<>();
+        }
         Set<Empleado> empleados = new HashSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
